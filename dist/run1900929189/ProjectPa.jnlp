@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjectPa.jnlp">
+  <information>
+    <title>ProjectPa</title>
+    <vendor>CoPeR00</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProjectPa.jar" size="139336" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.34.0.jar" size="7296329" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ProjectPa" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="projectpa.ProjectPA"  name="ProjectPa" />
+  <update check="always"/>
+</jnlp>

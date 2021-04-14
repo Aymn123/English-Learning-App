@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="722.0" prefWidth="920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectpa.Level2.Level2Controller">
+   <children>
+      <VBox layoutX="-2.0" layoutY="64.0" prefHeight="664.0" prefWidth="207.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Label text="Label" />
+            <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="207.0" style="-fx-background-color: #3F2B63;" text="Level 2 - Lectures" textFill="#f5eeee">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ListView fx:id="l1Lec" onMouseClicked="#fileView" prefHeight="192.0" prefWidth="157.0" style="-fx-background-color: #3F2B63;">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" />
+               </VBox.margin>
+            </ListView>
+            <Button mnemonicParsing="false" onAction="#Test" prefHeight="50.0" prefWidth="207.0" style="-fx-background-color: #3F2B63;" text="Test" textFill="WHITE" />
+            <TextField fx:id="txtPlay" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #3F2B63;">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="469.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../41860.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-2.0" prefHeight="65.0" prefWidth="207.0" style="-fx-background-color: #3F2B63;">
+         <children>
+            <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#Home" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #3F2B63;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <MediaView fx:id="mv" fitHeight="350.0" fitWidth="700.0" layoutX="231.0" layoutY="265.0" />
+      <ImageView fitHeight="51.0" fitWidth="62.0" layoutX="794.0" layoutY="209.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/تنزيل.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="57.0" layoutX="724.0" layoutY="215.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/video-play-button-png-clip-art-library-video-play-button-png-1536_1152.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
